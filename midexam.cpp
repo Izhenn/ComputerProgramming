@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int n,sum=0;
-	double avg;
+	int n;
+	float avg,sum=0;
 	cout<<"請輸入要輸入幾個數"<<endl;
 	cin>>n;
 	if(n>0){
