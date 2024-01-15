@@ -46,24 +46,39 @@
 //	}
 //}
 
-//#include<iostream> 	//ネΘㄢ﹃睹计羆 
-//#include<stdlib.h>
-//#include<time.h>
-//using namespace std;
-//int main(){
-//	int rand();
-//	int rand1();
-//	long long int num1=0,num2=0;
-//	srand(time(NULL));
-//	for(int i=0;i<30;i++){
-//		num1=num1 *10 + rand()%10;
-//	}
-//	for(int i=0;i<30;i++){
-//		num2=num2 *10 + rand()%10;
-//	}
-//	cout<<num1<<endl;
-//	cout<<num2<<endl;
-//	cout<<num1+num2;
-//}
+#include<iostream>
+#include<stdlib.h>
+#include<time.h>
+using namespace std;
+int main(){
+	int rand();
+	srand(time(NULL));
+	cout<<"睹絏1:"; 
+	int num1[30];  //30计睹絏
+	for(int i=0;i<30;i++){
+		num1[i]=rand()%10;
+		cout<<num1[i];
+	}
+	cout<<endl;
+	cout<<"睹絏2:";
+	int num2[30];
+	for(int i=0;i<30;i++){
+		num2[i]=rand()%10;
+		cout<<num2[i];
+	}
+	cout<<endl;
+	
+	int sum[31]={0};  //Τ秈┮ノsum[31] 
+	for(int i=29;i>=0;i--){  //眖程ê计(计)秨﹍皚琌眖0秨﹍┮程计琌i=29 
+		int a=num1[i]+num2[i]+sum[i+1];
+		sum[i+1]=a%10;
+		sum[i]=a/10;
+	}
+	cout<<":";
+	for(int i=0;i<31;i++){
+		cout<<sum[i];
+	} 
+	cout<<endl;
+}
 
 
