@@ -1,3 +1,5 @@
+//寫一個程式，可任意輸入1個整數值n，接著可輸入n個整數，
+//並計算這n個整數的總和及平均值，並將計算結果輸出。
 #include<iostream>
 using namespace std;
 int main(){

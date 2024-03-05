@@ -1,3 +1,4 @@
+//家览耏浑1000Ω–Ω翴琌常璶cout程coutせ贺翴计瞷诀瞯
 #include<stdlib.h>
 #include<iostream>
 #include<time.h>

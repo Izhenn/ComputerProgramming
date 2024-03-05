@@ -1,3 +1,4 @@
+//輸入任意3個整數a、b、c，經過處理後結果必為a≧b≧c，並輸出該結果。※此作業只能使用if指令。
 #include<iostream>
 using namespace std;
 int main(){

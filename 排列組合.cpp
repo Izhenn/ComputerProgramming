@@ -1,3 +1,4 @@
+//設計一個程式，利用函式的方式，解C m取n，公式為m!/(n!(m-n)!)。
 #include<iostream>
 using namespace std;
 int f(int x,int y){
